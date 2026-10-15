@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hospital-appointment-portal
-          image: asadhamdan10/hospital-appointment-portal:1.0
+          image: asadhamdan10/hospital-appointment-portal:1.1
           ports:
             - containerPort: 80
           readinessProbe:
