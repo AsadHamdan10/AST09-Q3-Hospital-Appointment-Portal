@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
         - name: hospital-appointment-portal
-          image: asadhamdan10/hospital-appointment-portal:1.1
+          image: asadhamdan10/hospital-appointment-portal:1.2
           ports:
             - containerPort: 80
           readinessProbe:
             httpGet:
-              path: /
+              path: /faulty-check
               port: 80
             initialDelaySeconds: 3
             periodSeconds: 5
